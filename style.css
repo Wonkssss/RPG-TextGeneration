@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body,
+html {
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  transition: background-color 0.5s ease;
+}
+
+h1, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.download-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#download-status {
+  border: solid 1px black;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+  padding: 10px;
+}
+
+.chat-container {
+  height: 600px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-box {
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  flex: 1 1;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.chat-stats {
+  background-color: rgba(255, 255, 255, 0.4);
+  flex: 0 0;
+  padding: 10px;
+  font-size: 0.75rem;
+  border-radius: 15px;
+}
+
+.message-container {
+  width: 100%;
+  display: flex;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.message-container.user {
+  justify-content: end;
+}
+
+.message-container.assistant {
+  justify-content: start;
+}
+
+.message-container.user .message {
+  background: #43424f;
+  color: #fff;
+}
+
+.message-container.assistant .message {
+  background: #f1f0f0;
+  color: #333;
+}
+
+.chat-input-container {
+  min-height: 50px;
+  flex: 0 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#user-input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+button {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  background-color: #43424f;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #333333;
+}
+
+.hidden {
+  display: none;
+}
+
+#options-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#options-container button {
+  flex: 1;
+  margin: 0 5px;
+  height: 60px;
+  text-align: center;
+}

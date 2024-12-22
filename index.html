@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>RPG Text Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>RPG Text Adventure</h1>
+  <p style="text-align: center; margin-top: 0;">
+    Model : Llama-3-8B-Instruct-q4f32_1-MLC-1k
+  </p>
+  <div class="download-container"></div>
+  <p id="download-status" class="hidden"></p>
+
+  <div class="chat-container">
+    <div id="chat-box" class="chat-box"></div>
+    <div id="chat-stats" class="chat-stats hidden"></div>
+    <div id="options-container" class="options-container hidden"></div>
+    <div class="chat-input-container">
+      <input type="text" id="user-input" placeholder="Type a command or change the storyline..." />
+      <button id="send" disabled>Send</button>
+    </div>
+  </div>
+
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>
