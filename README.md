@@ -37,6 +37,7 @@ This project is an RPG text adventure game powered by WebLLM. The AI agent assis
 
 - Wait for the model to download. It can take longer the first time, but subsequent downloads will be faster.
 - Once the model is downloaded, you can begin the game.
+- If the model doesn't load, try using private browsing to address potential cache issues.
 
 ## Technologies Used
 
